@@ -1,0 +1,50 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 3rem;
+    transition: all 300ms ease;
+    width: 330px;
+    background: #73707013;
+    border-right: 0.6px solid rgba(82, 81, 81, 0.133);
+  }
+  /* logo */
+  .bars{
+    display: none;
+  }
+ 
+  .menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+  .menu >a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(144, 140, 140, 0.288);
+  }
+
+a >.menuItem{
+   display: flex;
+   align-items: center;
+   padding: 1.5rem;
+   
+   
+  }
+  a >.menuItem:hover{
+  
+    scale: 1.03;
+    
+    
+   }
+  .menuItem>.menuIcons{
+    font-size: 1.5rem;
+   
+  }
+  .menuItem>.menuNames{
+ font-size: 1.5rem;
+  }
+  
+ 
+  

@@ -1,0 +1,154 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+  
+}
+.titles{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 12rem;
+  padding-top: 1rem;
+}
+.pText {
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.sOneText {
+  margin-top: 1rem;
+  color: rgb(125, 116, 116);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.wholeBox{
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10rem;
+  margin-left: 10rem;
+}
+.orangeText {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+.wholeBox >.left{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 2rem;
+margin-top: 5rem;
+
+
+}
+
+.wholeBox >.leftOne, .wholeBox>.leftTwo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+ 
+
+}
+
+
+.leftOne>.callBox , .leftTwo>.callBox{
+
+ margin-bottom:2rem;
+ height: 10rem;
+ display: flex;
+ flex-direction: column;
+ 
+
+}
+
+.callBox >.onlyIconAndNo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:2rem;
+ 
+  text-align: center;
+  padding: 1rem;
+
+}
+.callBox >.onlyIconAndNo .icons {
+   
+  transition: 1s all;
+  font-size: 2rem;
+ 
+ 
+  
+}
+.callBox >.onlyIconAndNo .icons:hover{
+scale: 1.2;
+}
+.callBox >.onlyIconAndNo>.callAndPhoneNo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.callBox .callAndPhoneNo .primaryText {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.callBox .callAndPhoneNo .secondaryText{
+  color: rgb(52, 51, 51);
+  font-size: 0.9rem;
+}
+.callBox >.buttons{
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left:2rem;
+  width: 70%;
+  height: 3rem;
+  background:#eeeeff;
+  border-radius: 16px;
+  color:#4066ff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.callBox:hover{
+  scale: 1.1;
+  box-shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+.callBox >.buttons:hover{
+  background:linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  color: white;
+  scale: 0.8;
+}
+
+.wholeBox >.right>.imageCo{
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  border: 8px solid rgba(255, 255, 255, 0.12);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.wholeBox >.right>.imageCo:hover{
+scale: 0.91;
+}
+.imageCo >img{
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,182 @@
+* {
+    font-family: Nunito, sans-serif;
+  }
+  
+  .textBlk {
+    margin:0px;
+    padding: 0px;
+    line-height: 25px;
+  
+  }
+  
+  .responsiveContainerBlock {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .responsiveContainerBlock.bigContainer {
+    height: 100vh;
+   
+  
+    background-image: url("https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb29.png");
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: cover;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-repeat: cover;
+    margin: auto;
+  }
+  
+  .responsiveContainerBlock.Container {
+    max-width: 800px;
+    flex-direction: column;
+    align-items: center;
+    height: 20rem;
+    padding:20px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .textBlk.heading {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+  }
+  
+  .textBlk.subHeading {
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+   
+  }
+  
+  .socialIcon {
+    width: 33px;
+    height: 33px;
+   
+  }
+  
+  .socialIconsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  
+  .socialIcon:hover {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .textBlk.heading {
+      font-size: 55px;
+      line-height: 65px;
+    }
+  
+    .textBlk.subHeading {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  
+    .socialIcon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .textBlk.subHeading {
+      line-height: 27px;
+    }
+  
+    .textBlk.heading {
+      font-size: 32px;
+      line-height: 40px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+  
+    .socialIcon {
+      margin: 0 25px 0 25px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .responsiveContainerBlock.bigContainer {
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+    }
+  
+    .textBlk.heading {
+      font-size: 45px;
+      line-height: 55px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+      
+    }
+  
+    .textBlk.subHeading {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      margin-left: 0px;
+    }
+  
+    .socialIcons-container {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .textBlk.subHeading {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  
+    .textBlk.heading {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  
+    .socialIcon {
+      margin: 0 20px 0 20px;
+    }
+  }

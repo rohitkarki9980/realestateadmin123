@@ -1,0 +1,176 @@
+.container {
+    height: 100%;
+    width: 100%;
+    margin-top: 2.5rem;
+    background: #f0f8ff;
+}
+
+.wrapper {
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+.wrapper>.firstTitle{
+    font-size: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.titles {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.titles>h5 {
+    color: #777;
+    font-size: 18px;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.titles>h2 {
+    color: #2e2929;
+    font-size: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.wrapper> .options {
+    width: 80%;
+    padding: 1.25rem 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.options>select {
+    width: 200px;
+   border: none;
+   outline: none;
+   padding-left: 1rem;
+   color: #452f2f;
+   border-radius: 20px;
+   font-size: 1rem;
+   display: inline-block;
+   transition: all 0.5s ease;
+   position: relative;
+   height:50px;
+   text-align: left;
+   cursor: pointer;
+   transform: 1000ms;
+   background: linear-gradient(145deg, #e0eefadd, #e2effa);
+   box-shadow:  2px 2px #aad3f6, 
+   2px 2px 18px #aad3f6;
+    
+}
+
+.options>select:first-child {
+    color: #484747;
+}
+
+.options>.rangeInput {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.options> .searchBtn {
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.options > .searchBtn > .searchIcon{
+    padding: 0.6rem;
+    width: 50px;
+    height: 50px;
+    fill: #121212;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(145deg, #e0eefadd, #e2effa);
+    box-shadow:  2px 2px #aad3f6, 
+    2px 2px 18px #aad3f6;
+}
+
+.options> .searchBtn:active > .searchIcon{
+    border: 1px solid rgb(7, 3, 73);
+    fill: rgb(7, 3, 73);
+    background: #fff;
+}
+
+
+/* individual property css */
+.properties{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    border: 1p solid red;
+}
+
+.noProperty{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 36px;
+    color: #222;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+    .wrapper>.options{
+        width: 90%;
+        padding: 0.75rem 1rem;
+        margin: 0 auto;
+    }
+
+    .properties{
+       justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 2000px) {
+    .options>select {
+        width: 200px;
+       border: none;
+       outline: none;
+       padding-left: 1rem;
+       color: #452f2f;
+       border-radius: 20px;
+       font-size: 1rem;
+       display: inline-block;
+       transition: all 0.5s ease;
+       position: relative;
+       height:50px;
+       text-align: left;
+       cursor: pointer;
+       transform: 1000ms;
+       background: linear-gradient(145deg, #e0eefadd, #e2effa);
+       box-shadow:  2px 2px #aad3f6, 
+       2px 2px 18px #aad3f6;   
+    }
+}

@@ -1,0 +1,24 @@
+.container{
+    height: 100%;
+    padding-bottom: 1rem;
+    background: aliceblue;
+}
+.container>.adminCard{
+    margin:auto;
+   width: 70%;
+}
+.tableProperty{
+    display: flex;
+    flex-direction: column;
+}
+.tableProperty > .lefter{
+    width: 50%;
+    border: 1px solid red;
+}
+h1{
+    color: #1f3e72;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+ 

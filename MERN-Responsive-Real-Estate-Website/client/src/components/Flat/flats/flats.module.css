@@ -1,0 +1,43 @@
+.container {
+    padding-top: 3rem;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(168, 161, 161);
+   
+}
+
+.wrapper {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+   
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5em;
+    
+}
+
+.titles>h5 {
+    color: orange;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.titles>h2 {
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.yachts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+}

@@ -1,0 +1,46 @@
+.backGround{
+  height: 100vh;
+}
+h2{
+  text-align: center;
+  font-size: 2rem;
+  color: #171717;
+  font-weight: 700;
+}
+.card{
+width: 70%;
+padding-top: 2rem;
+padding-bottom: 2rem;
+margin: auto;
+}
+
+.bodyContainer> .bodyTable{
+  border:1px solid rgba(101, 101, 101, 0.479);
+  width: 70%;
+ margin: auto;
+ border-radius: 22px;
+
+}
+.bodyTable> .bodyHead {
+  width: 100%;
+}
+ .bodyHead >.bodyRow{
+
+background-color: rgba(240, 235, 228, 0.66);
+display: flex;
+flex: 1;
+border-radius: 4px;
+gap: 6rem;
+margin-bottom: 2px;
+}
+.bodyRow:first-child{
+  font-weight: 500;
+}
+.bodyRow:hover{
+  scale: 1.03;
+}
+
+
+
+
+

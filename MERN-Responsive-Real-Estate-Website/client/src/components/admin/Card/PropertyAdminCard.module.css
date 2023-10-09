@@ -1,0 +1,79 @@
+
+  
+  .bodyContainer> .bodyTable{
+    border:1px solid rgba(101, 101, 101, 0.479);
+    width: 70%;
+   margin: auto;
+   border-radius: 22px;
+  
+  }
+  .bodyTable> .bodyHead {
+    width: 100%;
+  }
+   .bodyHead >.bodyRow{
+  
+  background-color: rgba(240, 235, 228, 0.66);
+  display: flex;
+  flex: 1;
+  border-radius: 4px;
+  gap: 6rem;
+  margin-bottom: 2px;
+  }
+  .bodyCell{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .bodyRow:first-child{
+    font-weight: 500;
+  }
+  .bodyRow:hover{
+    scale: 1.03;
+  }
+ .bodyCell> a{
+    text-decoration: underline;
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  .bodyCell.detailsLink{
+    display:flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+
+  }
+  .bodyCell.details{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.bodyCell.Image {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   
+
+  }
+  .bodyCell.Price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+   
+
+  }
+  .bodyCell.Image >img {
+    height: 125px;
+    width: 200px;
+    box-shadow:  1px 2px 0.8px rgba(82, 81, 81, 0.533)
+  }
+  
+  
+  
+  
+  
+  

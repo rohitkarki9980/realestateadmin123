@@ -1,0 +1,361 @@
+.container {
+  height: calc(100vh - 60px);
+  background: black;
+  padding-top: 60px;
+}
+
+.wrapper {
+  width: clamp(100%, 768px);
+  height: 100%;
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-bottom: 1.6px solid rgba(207, 198, 198, 0.867);
+}
+.wrapper > .fLeft {
+  width: 30%;
+  height: 40rem;
+  overflow: hidden;
+}
+.fLeft > img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  transition: scale 1s ease-out;
+}
+.fLeft > img:hover {
+  opacity: 1;
+  scale: 1.03;
+}
+.orangeCircleOne {
+  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100%;
+  background: var(--blue-gradient);
+  position: absolute;
+  left: 20rem;
+  top: 5rem;
+}
+
+.titleAndSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+}
+.titleAndSelect > .title {
+  width: 86%;
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1;
+}
+
+.title > .orangeCircle {
+  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  background: var(--orange-gradient);
+  position: absolute;
+  top: 210px;
+  right: 470px;
+  z-index: -1;
+}
+
+.titleAndSelect > .title > h2 {
+  color: #d4d6db;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+
+  text-align: end;
+}
+
+.titleAndSelect > .title > h5 {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: end;
+}
+
+.titleAndSelect > .options {
+  width: clamp(80%, 100vw, 86%);
+  width: 86%;
+  height: 6rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.options > select {
+  border: none;
+  outline: none;
+  padding-left: 5rem;
+  color: orange;
+
+  width: 250px;
+  font: 1.2rem bold;
+  display: inline-block;
+  transition: all 0.5s ease;
+  position: relative;
+  height: 100%;
+  text-align: left;
+  cursor: pointer;
+  transform: 1000ms;
+  /* From https://css.glass */
+  background: #ece9e932;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.options > select:first-child {
+  color: orange;
+}
+.option > select:hover {
+  color: blue;
+}
+
+.options > .rangeInput {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.options > .searchIcon {
+  padding: 0.6rem;
+  width: 50px;
+  height: 50px;
+  fill: #ece9e9;
+  cursor: pointer;
+}
+
+.titleAndSelect > .allCounter {
+
+  width: 86%;
+  display: flex;
+  margin-top: 2rem;
+  gap: 10px;
+  height: 7.7rem;
+}
+
+.allCounter > .Counter {
+
+  display: flex;
+  width: 33%;;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .allCounter > .Counter:hover {
+scale: 1.01;
+    }
+
+.Counter > .Name{
+  font-size: 1.5rem;
+  text-align: center;
+  color: #3a3b3e;
+}
+
+.Counter >.numberAndPlus{
+ 
+ display: flex;
+ text-align: center;
+ gap:10px
+  
+ 
+}
+.numberAndPlus>.number{
+font-size: 1.6rem;
+display: flex;
+align-items: center;
+margin-left: 6rem;
+justify-content: flex-end;
+width: 20%;
+
+
+}
+
+.numberAndPlus > .plus{
+  font-size: 3rem;
+  width: 20%;
+  color: orange;
+}
+
+
+
+
+
+
+.options > .searchIcon {
+  /* From https://css.glass */
+
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1350px) {
+  .title > .orangeCircle {
+    display: none;
+  }
+  .wrapper {
+    position: relative;
+    bottom: 4rem;
+    left: clamp(-3rem,1350px,-2rem);
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper > .fLeft {
+    display: none;
+  }
+  .wrapper > .titleAndSelect {
+    position: absolute;
+  }
+  .wrapper > .titleAndSelect {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    top: 7rem;
+  }
+
+  .titleAndSelect > .title > h2 {
+    font-size: clamp(2rem, 76vw, 2.5rem);
+    text-align: center;
+  }
+  .titleAndSelect > .title > h5 {
+    color: orange;
+    font-size: clamp(1, 76vw, 1.5rem);
+    font-weight: 600;
+    text-align: center;
+  }
+  .titleAndSelect > .options {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:2rem;
+    background: transparent;
+    gap: 1rem;
+    border: none;
+   
+  }
+ .options >select{
+  padding-left: 2rem;
+   
+  }
+  .options > .searchIcon {
+position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left:calc(100% + 0.5rem);
+  
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    bottom: 9rem;
+    left: -3rem;
+    border: none;
+  }
+
+  .wrapper > h2 {
+    font-size: 40px;
+  }
+
+  .wrapper > h5 {
+    font-size: 30px;
+  }
+  .wrapper > .titleAndSelect {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    top: 7rem;
+  }
+  .titleAndSelect > .title > h2 {
+    font-size: clamp(2rem, 76vw, 2.5rem);
+    text-align: center;
+    padding-left: 4rem;
+  }
+  .titleAndSelect > .title > h5 {
+    color: orange;
+    font-size: clamp(1, 76vw, 1.5rem);
+    font-weight: 600;
+    text-align: center;
+    padding-left: 4rem;
+  }
+  .titleAndSelect > .options {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    gap: 1rem;
+    border: none;
+    height: fit-content;
+  }
+  .options > select {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .options > .searchIcon {
+    position: absolute;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    left:calc(100% - 1.5rem);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .options > select:first-child {
+    color: orange;
+  }
+    .titleAndSelect>  .allCounter{
+    display: none;
+
+  }
+
+ 
+}

@@ -1,0 +1,142 @@
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.wrapperFlat {
+  height: 110vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
+}
+
+.wrapperFlat > .title > h3 {
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.wrapperFlat > form {
+  border: 1px solid #999;
+  border-radius: 20px;
+  padding: 1.75rem;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+form > .inputBox {
+  width: 100%;
+
+ 
+}
+
+form > .inputBox > label {
+  font-size: 1.03rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+
+  
+}
+form > .inputBox > input {
+ 
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #999;
+  border-radius: 13px;
+  height: 2.5rem;
+  padding-left: 10px;
+}
+
+form .inputBoxImage {
+  width: 100%;
+}
+
+form .inputBoxImage label {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: 700;
+  padding-left: 6rem;
+  gap: 6rem;
+  font-size: 1.2rem;
+  color: rgb(51, 53, 52);
+  transition: color 1s step-end;
+}
+
+form .inputBoxImage .labelBoxPhoto:hover {
+  scale: 1.001;
+  color: black;
+  cursor: pointer;
+}
+
+.wrapperFlat > form > .buttons {
+  position: relative;
+  padding: 1rem 2rem 0.5rem 2.5rem;
+ width: 30%;
+ border-radius: 10px;
+  color: #000000;
+  border: 2px solid #d08523;
+  -webkit-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+  align-items: center;
+  font-weight: 600;
+}
+.buttons > button {
+  background: transparent;
+  border: none;
+  outline: none;
+
+}
+
+.wrapperFlat > form > .buttons:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #404040;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapperFlat > form > .buttons:hover {
+  padding: 0.75rem 2.25rem;
+}
+.wrapperFlat > form > .buttons:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.error {
+  height: 70px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #f00;
+  color: #fff;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

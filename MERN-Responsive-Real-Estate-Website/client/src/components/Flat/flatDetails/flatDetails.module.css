@@ -1,0 +1,368 @@
+.container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.wrapper {
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+
+    display: flex;
+
+    /* From https://css.glass */
+}
+
+.left {
+    height: 612px;
+    width: 50%;
+    padding: 1rem;
+}
+
+.left > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+
+    border: 5px solid rgba(0, 0, 255, 0.12);
+}
+
+.right {
+    height: 612px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border-radius: 16px;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top > h2 {
+    color: #1f3e72;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.actions {
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.actions >:first-child {
+    text-decoration: none;
+    padding: 0.45rem 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    background-color: green;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.actions >:last-child {
+    padding: 0.45rem 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    background-color: #f00;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.leftAndRight {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 2rem;
+
+    padding: 1rem;
+}
+
+.leftAndRight > .RightLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 2rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+
+    width: 50%;
+}
+.leftAndRight > .RightLeft > span {
+    width: 100%;
+
+    border-radius: 12px;
+    padding-left: 10px;
+    color: #1f3e72;
+    font: 1.5rem bold sans-serif;
+    height: 3rem;
+}
+.leftAndRight > .RightRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 2rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    width: 50%;
+}
+.RightRight > span,
+p {
+    width: 100%;
+
+    border-radius: 12px;
+    padding-left: 10px;
+    color: #1f3e72;
+    font: 1.5rem bold sans-serif;
+    height: 3rem;
+}
+.ownerDetails {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-left: 5rem;
+
+}
+
+.ownerDetails > span {
+    font-size: 20px;
+    color: #333;
+}
+
+.ownerDetails button {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.25rem 0.75rem;
+    background-color: rgb(61, 61, 157);
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.ownerDetails > button:hover {
+    border-color: rgb(61, 61, 157);
+    color: white;
+    background-color: #fff;
+}
+
+.metersLong {
+    margin-top: 2rem;
+    font-size: 17px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.metersLong > span {
+    background-color: rgb(61, 61, 157);
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+}
+
+.contactBookmarkControls {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.contactForm {
+    position: absolute;
+    top: -6rem;
+    right: -10rem;
+    min-height: 100vh;
+    min-width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999999999;
+}
+
+.contactFormWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #938e8ed6;
+
+    height: 65vh;
+    width: 25vw;
+    border-radius: 20px;
+}
+
+.contactFormWrapper > h2 {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    color: #1f3e72;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.contactFormWrapper > .former > input {
+    width: 100%;
+    padding-left: 1rem;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(200, 191, 191);
+    border-radius: 8px;
+}
+.contactFormWrapper > form > div > label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    margin-right: 1rem;
+}
+
+.contactFormWrapper button {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.removeIcon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.success {
+    z-index: 999999999999;
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 1.5rem;
+    padding: 1.5rem;
+    background-color: green;
+    color: #fff;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #f00;
+    color: #fff;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    font-weight: 500;
+}
+
+.commentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    align-items: center;
+    -webkit-border-radius: 44px;
+    border-radius: 22px;
+    -webkit-box-shadow: 8px 8px 22px #b4bacb, -8px -8px 22px #eef6ff;
+    box-shadow: 8px 8px 22px #b4bacb, -8px -8px 22px #eef6ff;
+}
+
+.commentInput {
+    padding: 0.6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 2px solid #a4aeb7;
+}
+
+.commentInput > img {
+    width: 6%;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.commentInput > input {
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 3rem;
+    width: 80%;
+}
+
+.commentInput > button {
+    outline: none;
+    width: 10%;
+    height: 3rem;
+    border: none;
+    background-color: #fff;
+    color: #616161;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 1000ms;
+}
+.commentInput > button:active {
+    background-color: green;
+}
+.commentInput > button:hover {
+    scale: 1.1;
+}
+.comments {
+    max-height: 300px;
+    overflow: auto;
+    margin-top: 1.25rem;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1rem;
+}
+
+.noCommentsMessage {
+    font-size: 1rem;
+}

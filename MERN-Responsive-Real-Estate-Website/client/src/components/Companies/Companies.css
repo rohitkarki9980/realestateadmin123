@@ -1,0 +1,48 @@
+.logos {
+  width: 100%;
+  margin-top: 2rem;
+ 
+}
+.wrapperCompany {
+  width: 86%;
+  margin-left: 9rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(150, 148, 148, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 0.35rem;
+}
+
+.wrapper> .logoOne {
+ 
+  
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 95%;
+
+  padding: 2rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.06);
+
+  
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  
+  text-align: center;
+}
+.logos > h2 {
+  display: flex;
+  justify-content: flex-start;
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.logoOne >.logoPic {
+  height: 2rem;
+   aspect-ratio: 3/2;
+    object-fit: contain;
+    padding-top: 10px;
+    overflow: hidden;
+}

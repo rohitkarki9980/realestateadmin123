@@ -1,0 +1,616 @@
+.container {
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  background-color: rgb(187, 206, 222);
+  z-index: 1;
+  margin-top: -2rem;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.holder {
+  position: relative;
+  min-height: 100vh;
+  place-items: center;
+ 
+}
+.holder:before,
+.holder:after {
+  animation: orbit 5s linear infinite;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  content: "";
+  height: 250px;
+  position: absolute;
+  width: 250px;
+  top:50%;
+  right: 80%;
+  
+
+}
+.holder:before {
+  background: #ffe897;
+  background: -moz-radial-gradient(top right, #ffe897, #f98a05);
+  background: radial-gradient(to bottom left, #ffe897, #f98a05);
+  background: -webkit-radial-gradient(top right, #ffe897, #f98a05);
+   top:50%; 
+   right: 50%;
+
+
+}
+
+.holder:after {
+  animation-delay: 2.5s;
+  background: #e0e793;
+  background: -moz-radial-gradient(bottom right, #e0e793, #6dd0f1);
+  background: radial-gradient(to top left, #e0e793, #6dd0f1);
+  background: -webkit-radial-gradient(bottom right, #e0e793, #6dd0f1);
+  right: 80%;
+  top:50%;
+  z-index: -1;
+}
+.firstTitles{
+  font-size: 2rem;
+    font-weight: bold;
+    color: #1f3e72;
+    padding-top: 2rem;
+    margin-left:4rem;
+
+  
+
+  
+}
+
+.wrapper {
+  z-index: 2;
+  
+  max-width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 46px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+ 
+}
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+/* left */
+
+.left {
+  flex: 1;
+  height: 550px;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 20px;
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #808080, -20px -20px 60px #ffffff;
+}
+
+.left > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 4px solid rgba(0, 0, 255, 0.12);
+}
+
+/* right */
+
+.right {
+  flex: 1;
+  min-height: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.titleAndOwner {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-weight: Bold; 
+  
+ 
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.9rem;
+  text-transform: uppercase;
+}
+.title {
+  width: 70%;
+  color: orange;
+  font-weight: 500;
+}
+
+.title > span:nth-child(1){
+  color: #333;
+  font-weight: 550;
+}
+.title > span:nth-child(2){
+  color: orange;
+  font-weight: 800;
+}
+.owner {
+  width: 30%;
+  height: 9.9rem;
+  width: 9.9rem;
+  padding-top: 2px;
+  padding-left: 2px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.box {
+  z-index:1;
+  --border-size: 2px;
+  --border-angle: 0turn;
+  width: 10.1rem;
+  height:10rem;
+  margin-top: 10px;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+
+.typeAndContinent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-left: 20px;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  height: 3rem;
+}
+
+.typeAndContinent > div > span {
+  font-weight: bold;
+  color: #2d2b2b;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+}
+
+.priceAndOwner {
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 2.3rem;
+  height: 3rem;
+  font-weight: 600;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+ 
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+.details > .priceAndOwner {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.priceAndOwner > .price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.priceAndOwner > .price > span {
+
+  font-size: 17px;
+}
+
+.moreDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 1.3rem;
+  gap: 16rem;
+  height: 3rem;
+}
+
+.moreDetails > span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #1b1b1b;
+  padding-right: 1.25rem;
+}
+
+.moreDetails > span:last-child {
+  border: none;
+}
+
+.desc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: capitalize;
+  padding-left: 20px;
+  font-size: 1.3rem;
+  height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 450px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.desc > span {
+  color: #1f1e1e;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.bookContact {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 15rem;
+  height: 5rem;
+}
+.contactOwner {
+  width: 70%;
+  height: 2.7rem;
+  text-align: center;
+  border: 1px solid transparent;
+  outline: none;
+  margin-top: 10rem;
+  margin-right: 9px;
+  padding: 0.4rem 1rem;
+  white-space: nowrap;
+  background-color: white;
+  border-radius: 10px;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  transition-duration: 500ms;
+}
+
+.contactOwner:hover {
+  color: #262529;
+  font-weight: bold;
+  background-color: #fff;
+  scale: 1.1;
+}
+
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.controls > a {
+  width: 60%;
+  height: 2.7rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  padding: 0.6rem 0.75rem;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: green;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.controls > button {
+  width: 40%;
+  height: 2.7rem;
+  padding: 0.4rem 1rem;
+  margin-right: 10px;
+  text-align: center;
+  outline: none;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  font-size: 20px;
+  background-color: #f00;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2rem;
+  cursor: pointer;
+ 
+}
+/* list property */
+
+.contactForm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999999;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0)
+}
+
+.contactFormWrapper {
+  position: relative;
+  background-color: #9f4c4c;
+  height: 70vh;
+  width: 25vw;
+  border-radius: 20px;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(255, 255, 255, 0.82);
+}
+
+.contactFormWrapper > h2 {
+  text-align: center;
+ margin-top: 1rem;
+  margin-bottom: 2.2rem;
+  text-shadow: #e0e0e0 1px 1px 0, 2px 2px 2px rgba(37,16,10,0);
+color: #616161;
+}
+
+.contactFormWrapper > form > div > label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.contactFormWrapper > form >input{
+width: 90%;
+height: 3rem;
+padding-left: 25px;
+border-radius: 20px;
+}
+
+.contactFormWrapper button {
+  
+  transition: 1000ms;
+  background-color: white;
+  color: #333;
+  border: #112;
+  
+
+}
+.contactFormWrapper button:hover {
+  margin-top: 0.5rem;
+  scale: 1.1;
+  color:#616161;
+
+  
+}
+
+.removeIcon {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.2rem;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(124, 118, 118);
+}
+
+.contactBookmarkControls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.contactBookmarkControls > * {
+  cursor: pointer;
+}
+
+.error {
+  height: 70px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(238, 8, 8);
+  color: #fff;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  font-weight: 500;
+}
+
+.success {
+  z-index: 999999999999;
+  height: 70px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 1.5rem;
+  padding: 1.5rem;
+  background-color: green;
+  color: #fff;
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.noFuncMessage {
+  margin-top: 2.5rem;
+  font-size: 22px;
+  color: #333;
+  transition: 150ms all;
+}
+
+.noFuncMessage:hover {
+  color: #555;
+}
+
+.commentSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  align-items: center;
+  -webkit-border-radius: 44px;
+border-radius: 22px;
+-webkit-box-shadow: 8px 8px 22px #b4bacb, -8px -8px 22px #eef6ff;
+box-shadow: 8px 8px 22px #b4bacb, -8px -8px 22px #eef6ff;
+}
+
+.commentInput {
+  padding: 0.6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 2px solid #a4aeb7;
+}
+
+.commentInput > img {
+  width: 6%;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.commentInput > input {
+  flex: 1;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 20px;
+  height: 3rem;
+  width: 80%;
+}
+
+.commentInput > button {
+  outline: none;
+  width: 10%;
+  height: 3rem;
+  border: none;
+  background-color: #fff;
+  color: #616161;
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 1000ms;
+}
+.commentInput > button:active{
+  background-color: green;
+}
+.commentInput > button:hover{
+scale: 1.1;
+}
+
+.comments {
+  max-height: 300px;
+  overflow: auto;
+  margin-top: 1.25rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  
+}
+.noCommentsMessage{
+  font-size: 1rem;
+}
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+  .left {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .left > img {
+    width: 90%;
+    height: 75%;
+  }
+
+  .right {
+    width: 90%;
+  }
+
+  .contactFormWrapper {
+    height: 75vh;
+    width: 35vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .left {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .left > img {
+    width: 90%;
+    height: 75%;
+  }
+  .contactFormWrapper {
+    height: 75vh;
+    width: 50vw;
+  }
+
+  .contactOwner {
+    width: 150px;
+  }
+}
